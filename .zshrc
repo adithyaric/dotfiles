@@ -1,4 +1,4 @@
-export PATH=/opt/homebrew/bin/:/Users/${USER}/.local/bin:/bin:/${USER}/bin:/${USER}/local/bin:/sbin:${PATH}
+export PATH=$PATH:$HOME/.composer/vendor/bin:/opt/homebrew/bin/:/Users/${USER}/.local/bin:/bin:/usr/bin:/usr/local/bin:/sbin:${PATH}
 
 # Shell integrations
 eval "$(starship init zsh)"
@@ -19,7 +19,12 @@ alias vi='nvim'
 alias vim='nvim'
 alias c='clear'
 alias cd='z'
+alias ci='zi'
+alias lg='lazygit'
+alias r='ranger'
 
 # Plugins
 source ~/.config/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.config/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+source $(brew --prefix nvm)/nvm.sh
