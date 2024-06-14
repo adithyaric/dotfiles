@@ -6,25 +6,40 @@ eval "$(zoxide init zsh)"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Aliases
-alias ls='lsd'
+alias c='clear'
+alias cd='z'
+alias ci='zi'
+alias cp='cp -i'
+alias ssh='kitten ssh'
+
 alias la='lsd -a'
 alias ll='lsd -l'
-alias l='lsd --almost-all --long'
 alias llm='lsd --timesort --long'
+alias l='lsd --almost-all --long'
+alias ls='lsd'
 alias lS='lsd --oneline --classic'
 alias lt='lsd --tree --depth=2'
+
+alias lg='lazygit'
+alias mkdir='mkdir -p'
+alias mv='mv -i'
+alias ping='ping -c 10'
+alias ps='ps auxf'
+alias r='ranger'
 
 alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'
-alias c='clear'
-alias cd='z'
-alias ci='zi'
-alias lg='lazygit'
-alias r='ranger'
 
 # Plugins
 source ~/.config/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.config/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source $(brew --prefix nvm)/nvm.sh
+
+
+# Herd injected PHP 8.3 configuration.
+export HERD_PHP_83_INI_SCAN_DIR="/Users/adithyaricky/Library/Application Support/Herd/config/php/83/"
+
+# Herd injected PHP binary.
+export PATH="/Users/adithyaricky/Library/Application Support/Herd/bin/":$PATH

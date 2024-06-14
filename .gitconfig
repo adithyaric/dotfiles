@@ -1,0 +1,18 @@
+[user]
+	email = naughtyadit@gmail.com
+  name = adithya
+[init]
+	defaultBranch = main
+[color]
+	ui = true
+[core]
+	editor = nvim
+# [tag]
+# gpgSign = true
+# [filter "lfs"]
+# clean = git-lfs clean -- %f
+# smudge = git-lfs smudge -- %f
+# process = git-lfs filter-process
+# required = true
+# [gpg]
+# program = gpg
