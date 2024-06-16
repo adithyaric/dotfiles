@@ -22,10 +22,10 @@ hosts:
         # Configure host for API endpoint. Defaults to the host itself.
         api_host: gitlab.com
         # Your GitLab access token. To get one, read https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html
-        token: 84ebaedbaecb4d48de1033f00fa5c606d97e42d0a2abeab1a862e7f3971ef94f
+        token: 7fa206556e5eb7606012009ed456fe44ba820e9f46ba347bdc7318a04aba8616
         is_oauth2: "true"
-        oauth2_refresh_token: f537d807bcf74a0a0d144fe73f1714764fefb28ece4e0c0008c3ce5d3ef443c7
-        oauth2_expiry_date: 15 Jun 24 00:21 WIB
-        oauth2_code_verifier: vvUpEMFpBSAxs88KYtpbaqBMfDz9OSPw8XGYVZiI8Pztc
+        oauth2_refresh_token: c7567823610a1e69099bc1938b079c79d2ee52b0f6de234add7631e94435b5fd
+        oauth2_expiry_date: 15 Jun 24 02:48 WIB
+        oauth2_code_verifier: KXrRvuv15vWp3wuEyyowszmPtldCgYjFAt7vnqKBong8W
         git_protocol: https
         user: adithyaric

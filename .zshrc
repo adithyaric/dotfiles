@@ -1,3 +1,4 @@
+export GOPATH=/Users/$USER/go
 export PATH=$PATH:$HOME/.composer/vendor/bin:/opt/homebrew/bin/:/Users/${USER}/.local/bin:/bin:/usr/bin:/usr/local/bin:/sbin:${PATH}
 
 # Shell integrations
@@ -31,6 +32,14 @@ alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'
 
+# Change directory aliases
+alias home='cd ~'
+alias cd..='cd ..'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+
 # Plugins
 source ~/.config/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.config/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -39,7 +48,11 @@ source $(brew --prefix nvm)/nvm.sh
 
 
 # Herd injected PHP 8.3 configuration.
-export HERD_PHP_83_INI_SCAN_DIR="/Users/adithyaricky/Library/Application Support/Herd/config/php/83/"
+#export HERD_PHP_83_INI_SCAN_DIR="/Users/adithyaricky/Library/Application Support/Herd/config/php/83/"
 
 # Herd injected PHP binary.
-export PATH="/Users/adithyaricky/Library/Application Support/Herd/bin/":$PATH
+#export PATH="/Users/adithyaricky/Library/Application Support/Herd/bin/":$PATH
+#export PATH="/opt/homebrew/opt/php@8.1/bin:$PATH"
+#export PATH="/opt/homebrew/opt/php@8.1/sbin:$PATH"
+export PATH="/opt/homebrew/opt/php@8.2/bin:$PATH"
+export PATH="/opt/homebrew/opt/php@8.2/sbin:$PATH"
