@@ -12,6 +12,7 @@ alias cd='z'
 alias ci='zi'
 alias cp='cp -i'
 alias ssh='kitten ssh'
+alias love="/Applications/love.app/Contents/MacOS/love"
 
 alias la='lsd -a'
 alias ll='lsd -l'
@@ -24,7 +25,7 @@ alias lt='lsd --tree --depth=2'
 alias lg='lazygit'
 alias mkdir='mkdir -p'
 alias mv='mv -i'
-alias ping='ping -c 10'
+alias ping='ping -c 5'
 alias ps='ps auxf'
 alias r='ranger'
 
@@ -44,7 +45,7 @@ alias .....='cd ../../../..'
 source ~/.config/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.config/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-source $(brew --prefix nvm)/nvm.sh
+#source $(brew --prefix nvm)/nvm.sh
 
 
 # Herd injected PHP 8.3 configuration.
@@ -54,5 +55,7 @@ source $(brew --prefix nvm)/nvm.sh
 #export PATH="/Users/adithyaricky/Library/Application Support/Herd/bin/":$PATH
 #export PATH="/opt/homebrew/opt/php@8.1/bin:$PATH"
 #export PATH="/opt/homebrew/opt/php@8.1/sbin:$PATH"
-export PATH="/opt/homebrew/opt/php@8.2/bin:$PATH"
-export PATH="/opt/homebrew/opt/php@8.2/sbin:$PATH"
+#export PATH="/opt/homebrew/opt/php@8.2/bin:$PATH"
+#export PATH="/opt/homebrew/opt/php@8.2/sbin:$PATH"
+
+eval "$(atuin init zsh)"

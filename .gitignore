@@ -2,3 +2,6 @@
 .git/
 .zsh/
 .config/valet/
+.config/valet/Log/
+.config/psysh/
+valet/*
